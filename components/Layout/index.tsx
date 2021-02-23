@@ -1,4 +1,4 @@
-import { Fragment, ReactChild, ReactElement } from "react";
+import { Fragment, ReactChild, ReactElement, ReactNode } from "react";
 import Head from "next/head";
 import Footer from "../Footer";
 import Nav from "../Nav";
@@ -6,7 +6,7 @@ import styles from "./styles.module.css";
 
 interface Props {
   title: string;
-  children: ReactChild;
+  children: ReactNode;
 }
 
 export default function Layout(props: Props): ReactElement {

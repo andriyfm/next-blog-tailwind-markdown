@@ -1,0 +1,16 @@
+.cardList {
+  background-color: white;
+}
+
+.cardItem {
+  display: block;
+  border: 1px solid rgb(218, 218, 218);
+  border-radius: 4px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.cardTitle {
+  font-size: 2rem;
+  margin: 0;
+}
