@@ -12,18 +12,16 @@ export function CardList(props: CardList): ReactElement {
 
 interface CardItem {
   title: string;
-  content: string;
   date: string;
   slug: string;
 }
 
 export function CardItem(props: CardItem): ReactElement {
   return (
-    <Link href={`/${props.slug}`}>
+    <Link href={`/blog/${props.slug}`}>
       <a className={styles.cardItem}>
         <h2 className={styles.cardTitle}>{props.title}</h2>
-        <small>{props.date}</small>
-        <p className={styles.cardContent}>{props.content}</p>
+        <small>{props.date.toString()}</small>
       </a>
     </Link>
   );

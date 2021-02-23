@@ -8,17 +8,16 @@ export default function Home() {
     <Layout title="Home">
       <h1 className={styles.title}>Home</h1>
 
-      {postsData.map((item) => (
-        <CardList>
+      <CardList>
+        {postsData.map((item) => (
           <CardItem
             key={item.slug}
             slug={item.slug}
             title={item.title}
-            content={item.content}
-            date={item.date.toISOString()}
+            date={item.date}
           />
-        </CardList>
-      ))}
+        ))}
+      </CardList>
     </Layout>
   );
 }
